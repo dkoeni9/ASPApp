@@ -1,0 +1,21 @@
+﻿@{
+	ViewData["Title"] = "Логин";
+}
+
+<div class="text-center d-flex flex-column justify-content-center align-items-center vh-100">
+	<h1 class="display-1">Вход</h1>
+	<form method="post" asp-action="Login" asp-controller="Login">
+		<div class="form-group">
+			<div class="my-4">
+				<label class="control-label">Логин</label>
+				<input asp-for="Login" class="form-control" name="Login" />
+				<label class="control-label">Пароль</label>
+				<input asp-for="Password" class="form-control" type="password" name="Password" />
+			</div>
+
+			<button class="btn btn-primary" role="button" type="submit">Войти</button><br>
+			<div class="mt-2">@ViewData["Message"]</div>
+
+		</div>
+	</form>
+</div>
