@@ -34,7 +34,7 @@ namespace PraktASPApp.Controllers
 				await db.Users.AddAsync(user);
 				await db.SaveChangesAsync();
 
-				return RedirectToAction("Office", "Office");
+				return RedirectToAction("Login", "Login");
 
 			}
 		}
